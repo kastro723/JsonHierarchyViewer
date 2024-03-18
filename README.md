@@ -1,6 +1,6 @@
 # JsonHierarchyViewer
 
- [패치 노트]
+    [패치 노트]
             
             v1.0.3 - 24.03.15
                     - 객체 또는 배열 및 배열의 요소가 비어 있을 경우 수정 
@@ -18,7 +18,7 @@
                     - 기능 추가
 
  ---------------------------------------------------------------------------------------------                   
-[JsonHierarchyViewer] - Json 파일 뷰어(JSON File Viewer)
+    [JsonHierarchyViewer] - Json 파일 뷰어(JSON File Viewer)
 
             Drag and Drop or 'Open JSON File' 버튼을 통해 파일 지정 (Select)
 
