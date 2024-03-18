@@ -20,7 +20,7 @@
  ---------------------------------------------------------------------------------------------                   
 [JsonHierarchyViewer] - Json 파일 뷰어(JSON File Viewer)
 
-            ![image](https://github.com/kastro723/JsonHierarchyViewer/assets/55536937/7ffdbe0c-9695-4f5c-8ccc-5aa782f42570)
+![image](https://github.com/kastro723/JsonHierarchyViewer/assets/55536937/7ffdbe0c-9695-4f5c-8ccc-5aa782f42570)
 
             Drag and Drop or 'Open JSON File' 버튼을 통해 파일 지정 (Select)
 
