@@ -18,8 +18,9 @@
                     - 기능 추가
 
  ---------------------------------------------------------------------------------------------                   
-    Json Hierarchy Viewer
-    ![image](https://github.com/kastro723/JsonHierarchyViewer/assets/55536937/2ed7fef0-e7f9-48e4-ad3a-b409852e240e)
+Json Hierarchy Viewer
+![image](https://github.com/kastro723/JsonHierarchyViewer/assets/55536937/2ed7fef0-e7f9-48e4-ad3a-b409852e240e)
+
     [기능설명]
     
             Json 파일 뷰어(JSON File Viewer)
