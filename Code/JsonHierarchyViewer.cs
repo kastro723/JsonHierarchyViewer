@@ -21,7 +21,7 @@ public class JsonHierarchyViewer : EditorWindow
 
     private void OnGUI()
     {
-        GUILayout.Label("Ver. 1.0.3", EditorStyles.boldLabel);
+        GUILayout.Label("Ver. 1.1.0", EditorStyles.boldLabel);
         DrawLine();
 
         GUILayout.BeginVertical();
@@ -33,6 +33,11 @@ public class JsonHierarchyViewer : EditorWindow
         if (GUILayout.Button("Open JSON File"))
         {
             OpenJsonFile();
+        }
+
+        if (GUILayout.Button("Refresh JSON File") && !string.IsNullOrEmpty(jsonFilePath))
+        {
+            ParseJsonFile(jsonFilePath); // 현재 로드된 파일을 다시 파싱
         }
 
         EditorGUILayout.LabelField("JSON File Path:", jsonFilePath);
@@ -73,6 +78,10 @@ public class JsonHierarchyViewer : EditorWindow
                         var path = AssetDatabase.GetAssetPath(draggedObject);
                         if (Path.GetExtension(path).Equals(".json"))
                         {
+                            if (jsonFilePath != path) // 파일 경로가 변경되었다면 foldoutStates를 초기화
+                            {
+                                foldoutStates.Clear();
+                            }
                             jsonFilePath = path;
                             ParseJsonFile(path);
                             break;
@@ -88,6 +97,10 @@ public class JsonHierarchyViewer : EditorWindow
         string path = EditorUtility.OpenFilePanel("Select JSON File", Application.persistentDataPath, "json");
         if (!string.IsNullOrEmpty(path) && Path.GetExtension(path).Equals(".json"))
         {
+            if (jsonFilePath != path) // 파일 경로가 변경되었다면 foldoutStates를 초기화
+            {
+                foldoutStates.Clear();
+            }
             jsonFilePath = path;
             ParseJsonFile(path);
         }
@@ -103,7 +116,7 @@ public class JsonHierarchyViewer : EditorWindow
     {
         string jsonContent = File.ReadAllText(filePath);
         jsonData = JToken.Parse(jsonContent); // JToken.Parse를 사용하여 JSON 데이터 파싱
-        foldoutStates.Clear();
+        //foldoutStates.Clear();
         Repaint();
     }
 
