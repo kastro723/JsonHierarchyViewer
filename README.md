@@ -27,14 +27,18 @@
 
     [기능설명]
     
-            Json 파일 뷰어(JSON File Viewer)
+            Json 파일의 내용을 볼 수 있는 뷰어(JSON File Viewer)
             
             객체, 배열 형식 지원
 
 
     [사용방법]
     
-            Drag and Drop or 'Open JSON File' 버튼을 통해 파일 지정 (Select)
+            Drag and Drop or 'Open JSON File' -  드래그앤 드롭으로 파일 지정 (Select)
+            Open JSON FILE - 선택된 JSON File을 뷰어로 오픈
+            JSON File Path - 선택된 json 파일의 위치
+
+            폴더 버튼으로 하위 목록 오픈 및 클로즈
 
 
 ​            
